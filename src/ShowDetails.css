@@ -1,0 +1,9 @@
+.img-textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.title {
+  text-align: center;
+}

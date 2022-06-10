@@ -1,12 +1,17 @@
-
-import './App.css';
-import Search from './Search';
+import "./App.css";
+import RoutesComponents from "./RoutesComponents";
+import Search from "./Search";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-        <Search/>
-    </div>
+    <main>
+      <div className="App">
+        <Router>
+          <RoutesComponents />
+        </Router>
+      </div>
+    </main>
   );
 }
 
