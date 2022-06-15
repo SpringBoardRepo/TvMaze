@@ -2,8 +2,28 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-right: 2rem;
+  margin-left: 4rem;
+}
+.img {
+  margin-right: 2rem;
+  margin-left: 4rem;
 }
 
 .title {
   text-align: center;
+  margin-top: 2rem;
+}
+
+.summary {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  margin-left: 2rem;
+  font-size: medium;
+}
+.buttons {
+  margin-top: 3px;
+  align-items: baseline;
+  margin-left: 40px;
+  border-radius: 50px;
 }
