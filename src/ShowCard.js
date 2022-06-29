@@ -7,16 +7,16 @@ function ShowCard({ name, image, summary, id }) {
 
   return (
     <>
-      <Col xs={12} sm={6} md={4} lg={3} className="showCard">
-        <Card border="primary" style={{ width: "18rem" }}>
+      <Col xs={12} sm={6} md={4} lg={3}>
+        <Card className="showCard" style={{ width: "17rem" }}>
           <Card.Img
+            className="card-image"
             variant="top"
             src={image ? image.medium : missingImageUrl}
-            className="img"
           />
           <Card.Body>
             <Card.Title className="showTitle">{name}</Card.Title>
-            <Button variant="primary" href={`/showDetails/${id}`}>
+            <Button size="sm" href={`/showDetails/${id}`}>
               See Details
             </Button>
           </Card.Body>

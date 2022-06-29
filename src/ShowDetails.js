@@ -41,17 +41,19 @@ function ShowDetails() {
             <div className="summary">
               <div>
                 <b>Genre:</b>
-                {showInfo.genres &&
-                  showInfo.genres.map((genre) => (
-                    <Button
-                      key={genre}
-                      variant="success"
-                      size="sm"
-                      className="buttons"
-                    >
-                      {genre}
-                    </Button>
-                  ))}
+                <span>
+                  {showInfo.genres &&
+                    showInfo.genres.map((genre) => (
+                      <Button
+                        key={genre}
+                        variant="success"
+                        size="sm"
+                        className="buttons"
+                      >
+                        {genre}
+                      </Button>
+                    ))}
+                </span>
               </div>
               <div>
                 <b>Language:</b>
@@ -73,11 +75,13 @@ function ShowDetails() {
                   </span>
                 )}
               </div>
-
-              <div
-                contentEditable="true"
-                dangerouslySetInnerHTML={{ __html: showInfo.summary }}
-              ></div>
+              <div>
+                <b>Description :</b>
+                <p
+                  contentEditable="true"
+                  dangerouslySetInnerHTML={{ __html: showInfo.summary }}
+                ></p>
+              </div>
               <div>
                 <b>OfficialSite : </b>
                 {showInfo.officialSite ? (

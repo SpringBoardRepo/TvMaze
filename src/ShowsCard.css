@@ -8,6 +8,7 @@
   margin-top: 2rem;
   text-align: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .btn {
@@ -20,4 +21,11 @@
 .showTitle {
   font: 100;
   color: teal;
+}
+.card-image {
+  width: 75% !important ;
+}
+
+.card:hover {
+  transition: scale(1.03);
 }
